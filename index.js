@@ -35,3 +35,46 @@ console.log(typeof x); //number
 console.log(y);
 console.log(typeof y); //string
 //Non-primitive data types: object, array, function
+
+//Comparison operators
+//1. equal to
+//not equal to
+//strict equal to
+//strict not equal to 
+//greater than
+//less than
+//greater than or equal to
+//less than or equal to 
+
+//Arrays
+//[  - empty array]
+let fruits = ["apple", "mango", "banana", "sugarcane"];
+//["Vision", 25, "Uganda", {place: "home"}, true, null, undefined]
+
+console.log(fruits);
+console.log(fruits[2]);
+
+//Mixed array
+let mixedArray = ["Vision", 25, "Uganda", {place: "home"}, true, null, undefined]; 
+console.log(mixedArray[3]);
+
+//Object
+//{}  - empty object
+// {
+//     name: "Vision",     //name-property/key, Vision-value
+//     age: 30,
+//     isStudent: false,
+//     hobbies: ["running", "eating", "music", "reading"]
+// }
+let person = {
+    name: "John",
+    age: 30,
+    country: Uganda,
+    isStudent: true,
+    hobbies: ["running", "eating", "music", "reading"],
+    address: {
+        street: "123 Main St",
+        city: "Kampala",
+        country: "Uganda"
+    }
+}
