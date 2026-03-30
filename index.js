@@ -69,7 +69,7 @@ console.log(mixedArray[3]);
 let person = {
     name: "John",
     age: 30,
-    country: Uganda,
+    country: "Uganda",
     isStudent: true,
     hobbies: ["running", "eating", "music", "reading"],
     address: {
@@ -78,3 +78,9 @@ let person = {
         country: "Uganda"
     }
 }
+
+console.log(person);
+console.log(person.name);
+console.log(person["name"]);
+
+//Concatenation 
