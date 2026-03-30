@@ -21,4 +21,4 @@ let i = 0;
 do {
     console.log("from the do while loop ", i);
     i++;
-} while (i < 7);
+} while (i < 7)
