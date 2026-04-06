@@ -26,3 +26,44 @@ console.log(secondParagraph);
 const secondParagraphByNthChild = document.querySelector(".intro-paragraph:nth-child(2)"); // this will select the second paragraph with the class name intro-paragraph
 console.log(secondParagraphByNthChild);
 //54:11
+
+//using getElementById
+const mainHeadingById = document.getElementById("main-heading");
+console.log(mainHeadingById); 
+
+//using getElementsByClassName, there is an s
+const introParagraphsByClassName = document.getElementsByClassName("intro-paragraph"); //this returns an array
+console.log(introParagraphsByClassName); // this will return an HTML collection of all the elements with the class name intro-paragraph
+
+
+//Manipulating the DOM
+//can manipulate the text or anything about the element using JavaScript. We can change the text content, the HTML content, the style, etc.
+
+mainHeadingById.textContent = "Welcome to the DOM Manipulation"; // this will change the text content of the main heading
+mainHeadingById.style.color = "blue"; // this will change the color of the main heading to blue
+mainHeadingById.style.fontSize = "100px"; // this will change the font size of the main heading to 100px
+
+//Event Hn=andling
+//Event listeners
+//can add event listeners to elements to make them interactive. An event listener is a function that will be called when a specific event occurs on an element. For example, we can add a click event listener to a button that will change the text of a paragraph when the button is clicked.
+
+const changeButton = document.querySelector("#change-paragraph"); //querySelector is regarded the mordern way to access elements
+changeButton.addEventListener("click", function () {
+    secondParagraph.textContent = "Well, the button was pressed, not so?";
+    secondParagraph.style.color = "brown";
+    secondParagraph.style.fontSize = "50px";
+    secondParagraph.style.border = "2px solid orange";
+})
+
+
+
+
+
+
+
+
+
+
+//RESEARCH : 
+//Why is the nth-child(1) returening null
+//DOM manipulation in javascript. w3schools, mozilla developer network
